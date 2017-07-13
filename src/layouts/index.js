@@ -14,10 +14,10 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Last Coin Tonight"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "A short recap of last week in cryptocurrency" },
+            { name: "keywords", content: "cryptocurrency, weeks" },
           ]}
         />
         <div
@@ -41,7 +41,7 @@ export default class Template extends React.Component {
                   textDecoration: "none",
                 }}
               >
-                Gatsby
+                Last Coin Tonight
               </Link>
             </h1>
           </div>
