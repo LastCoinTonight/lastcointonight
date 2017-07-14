@@ -1,24 +1,24 @@
 {
   "assetsByChunkName": {
     "commons": [
-      "commons-1d2014835fc5dbcf42d1.js",
-      "commons-1d2014835fc5dbcf42d1.js.map"
+      "commons-6bf57902d7453db0f14d.js",
+      "commons-6bf57902d7453db0f14d.js.map"
     ],
     "layout-component---index": [
-      "layout-component---index-3be8d250e89c96ae7bdb.js",
-      "layout-component---index-3be8d250e89c96ae7bdb.js.map"
-    ],
-    "page-component---src-pages-page-2-js": [
-      "page-component---src-pages-page-2-js-cffddd98b701364bb235.js",
-      "page-component---src-pages-page-2-js-cffddd98b701364bb235.js.map"
+      "layout-component---index-a99177f3d5af05e1d4b7.js",
+      "layout-component---index-a99177f3d5af05e1d4b7.js.map"
     ],
     "page-component---src-pages-index-js": [
-      "page-component---src-pages-index-js-7cd003d6668574dfc322.js",
-      "page-component---src-pages-index-js-7cd003d6668574dfc322.js.map"
+      "page-component---src-pages-index-js-2617d3d1860f1eae699b.js",
+      "page-component---src-pages-index-js-2617d3d1860f1eae699b.js.map"
     ],
     "path---page-2": [
       "path---page-2-586c7e095e534a3909ec.js",
       "path---page-2-586c7e095e534a3909ec.js.map"
+    ],
+    "path---july-13": [
+      "path---july-13-a3e45ddbca8afb6187da.js",
+      "path---july-13-a3e45ddbca8afb6187da.js.map"
     ],
     "path---index": [
       "path---index-586c7e095e534a3909ec.js",
@@ -32,13 +32,21 @@
       "path---404-html-586c7e095e534a3909ec.js",
       "path---404-html-586c7e095e534a3909ec.js.map"
     ],
+    "page-component---src-templates-post-js": [
+      "page-component---src-templates-post-js-e1297afc486f0f25dc85.js",
+      "page-component---src-templates-post-js-e1297afc486f0f25dc85.js.map"
+    ],
+    "page-component---src-pages-page-2-js": [
+      "page-component---src-pages-page-2-js-c67200508e2155130c88.js",
+      "page-component---src-pages-page-2-js-c67200508e2155130c88.js.map"
+    ],
     "page-component---src-pages-404-js": [
       "page-component---src-pages-404-js-f555dc6d19c896ccbe44.js",
       "page-component---src-pages-404-js-f555dc6d19c896ccbe44.js.map"
     ],
     "app": [
-      "app-8891957b627cc72e4c77.js",
-      "app-8891957b627cc72e4c77.js.map"
+      "app-c56b629402f391c255d4.js",
+      "app-c56b629402f391c255d4.js.map"
     ]
   }
 }
