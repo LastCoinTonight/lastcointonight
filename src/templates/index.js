@@ -10,6 +10,7 @@ class IndexTemplate extends React.Component {
   render() {
 
     const post = this.props.pathContext
+    console.log(this.props)
     console.log(post)
 
     return (
@@ -34,14 +35,14 @@ class IndexTemplate extends React.Component {
 
 export default IndexTemplate
 
-// export const pageQuery = graphql`
-// query BlogPostBySlug($slug: String!) {
-//   markdownRemark(fields: { slug: { eq: "/posts/" }}) {
-//     html
-//     frontmatter {
-//       title
-//       prev
-//     }
-//   }
-// }
-// `
+export const pageQuery = graphql`
+query myQuery {
+  markdownRemark(fields: { slug: { eq: "/posts/" }}) {
+    html
+    frontmatter {
+      title
+      prev
+    }
+  }
+}
+`
