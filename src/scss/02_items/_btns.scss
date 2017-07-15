@@ -1,0 +1,81 @@
+/**
+ * 02_items/btns
+ * Btns module
+ */
+
+%btn{
+  @include marpad(0px 0px spacing(), 12px 28px 11px);
+  @include rem(font-size, $text_small_size);
+  @include rem(line-height, $text_size);
+  border-radius: 4px;
+  border: 1px solid theme(medium-border);
+  color: theme(text);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $demiFont;
+  letter-spacing: .5px;
+  text-align: center;
+
+  @include hover {
+    background-image: none;
+    border-color: theme(brand);
+    text-decoration: none;
+    color: theme(text);
+  }
+
+}
+
+.btn, input[type="submit"].btn, button.btn {
+  @extend %btn;
+
+  &.-link {
+    border-color: theme(brand);
+    color: theme(brand);
+    text-transform: uppercase;
+
+    @include hover {
+      background: theme(brand);
+      color: theme(light-text, $dark-theme);
+    }
+  }
+
+  &.-main {
+    background: theme(brand);
+    border-color: theme(brand);
+    color: theme(light-text, $dark-theme);
+    text-transform: uppercase;
+
+    @include hover {
+      background: theme(button-hover);
+      border-color: theme(button-hover);
+      color: theme(light-text, $dark-theme);
+    }
+
+  }
+
+  &.-small {
+    @include marpad(0px 0px spacing(.75), 6px 20px 5px);
+  }
+
+  &.-large {
+    @include rem(font-size, $text_size);
+    @include marpad(0px 0px spacing(), 22px 38px 20px);
+    letter-spacing: 1px;
+  }
+
+  &.-block {
+    display: block;
+  }
+}
+
+button.btn.-block {
+  width: 100%;
+}
+
+a.btn {
+  @include hover {
+    &::after {
+      display: none;
+    }
+  }
+}

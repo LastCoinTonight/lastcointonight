@@ -1,0 +1,99 @@
+/**
+ * 03_collections/boxes
+ * Styles for boxes
+ */
+
+%box {
+  @include marpad(0px 0px 40px, 0px);
+  // @include borderRadius(5px);
+  background: theme(background);
+}
+
+.box__header {
+  // @include borderRadius(5px 5px 0px 0px);
+  padding: 10px 20px;
+  background: theme(border);
+}
+
+.box__heading {
+  margin: 0;
+  color: theme(text);
+  font-weight: $regularFont;
+}
+
+.box__body {
+  padding: 20px 19px 0px;
+  border-left: 1px solid theme(border);
+  border-right: 1px solid theme(border);
+  // overflow: auto; // prevent margin collapse
+
+  &.-cont {
+    padding: 0px 19px;
+  }
+
+  &.-end {
+    border-bottom: 1px solid theme(border);
+  }
+}
+
+.box__text {}
+
+.box__footer {
+  border: 1px solid theme(border);
+  padding: 5px 19px;
+}
+
+//box types
+.box {
+  @extend %box;
+
+  &.-main {
+    .box__header {
+      background: theme(brand);
+    }
+
+    .box__heading {
+      color: theme(light-text, $dark-theme);
+    }
+  }
+
+  &.-info {
+    .box__header {
+      background: theme(info);
+    }
+
+    .box__heading {
+      color: theme(light-text, $dark-theme);
+    }
+  }
+
+  &.-success {
+    .box__header {
+      background: theme(success);
+    }
+
+    .box__heading {
+      color: theme(light-text, $dark-theme);
+    }
+  }
+
+  &.-warning {
+    .box__header {
+      background: theme(warning);
+    }
+
+    .box__heading {
+      color: theme(light-text, $dark-theme);
+    }
+  }
+
+  &.-error {
+    .box__header {
+      background: theme(error);
+    }
+
+    .box__heading {
+      color: theme(light-text, $dark-theme);
+    }
+  }
+}

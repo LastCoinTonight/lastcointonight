@@ -1,0 +1,134 @@
+/**
+ * 01_elements/forms
+ * Forms module
+ */
+
+form {}
+
+label, input, textarea, select, button {
+  @include borderBox;
+  @include rem(font-size, $text_size);
+  @include rem(line-height, $text_line_height);
+  font-family: $global_family;
+  font-weight: $regularFont;
+}
+
+legend {
+  @include borderBox;
+  width: 100%;
+  @include rem(padding, spacing(1.5));
+  @include rem(margin, 0 0 spacing(1.5));
+  font-family: $global_family;
+  @include rem(font-size, $text_size);
+  @include rem(line-height, $text_line_height);
+  background: theme(background-alt);
+}
+
+label {
+  @include rem(margin, 0 0 5px 0);
+  color: theme(medium-text);
+  display: block;
+  font-family: $global_family;
+  font-size: $text_small_size;
+  font-weight: $regularFont;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  @include rem(height, 34px);
+  @include rem(padding, spacing(.25) spacing(.5));
+  margin-left:0;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid theme(input-border);
+  color: theme(text);
+
+  &::placeholder {
+    color: theme(medium-text)
+  }
+
+  &:focus {
+    border-color: $focus_border;
+    box-shadow: none;
+  }
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-weight: $regularFont;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  &:focus {
+    border-color: theme(dark-input-border);
+    border-width: 2px;
+    box-shadow: none;
+  }
+
+}
+
+select {
+  @include rem(line-height, 30px);
+  @include rem(font-size, $text_small_size);
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: $demiFont;
+  height: 30px;
+
+  &:focus {
+    border: 1px solid transparent;
+    box-shadow: none;
+  }
+
+  &[multiple], &[size] {
+    height: auto;
+  }
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  background-color: theme(background);
+  height: auto;
+  overflow: auto; // remove scrollbar in IE
+  resize: none;
+}
+
+button,
+input[type="submit"] {
+  border-radius: 0px;
+  cursor: pointer;
+  border: 1px solid theme(border);
+  background: none;
+}
+
+fieldset {
+  @include rem(padding, 0);
+  @include rem(margin, 0 0 20px);
+  border: none;
+}
+
+@include bp(small) {
+  select, label {
+    @include rem(font-size, $text_size);
+  }
+}

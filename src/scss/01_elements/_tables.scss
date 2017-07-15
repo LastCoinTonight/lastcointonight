@@ -1,0 +1,48 @@
+/*
+ * 01_elements/tables
+ * Tables module
+ */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  @include rem(margin, 0px 0px 10px);
+}
+
+caption {
+  @include rem(padding, 0px 0px 10px);
+  color: theme(light_text);
+  @include rem(font-size, $text_size);
+  text-align: left;
+}
+
+thead {
+  &>tr > th {
+    border-bottom: 2px solid theme(border);
+    vertical-align: bottom;
+  }
+}
+
+tbody {
+  > tr > td, > tr > th {
+    border-top: 1px solid theme(border);
+    vertical-align: top;
+  }
+}
+
+tr {
+
+}
+
+th, td {
+  @include rem(padding, 10px 5px);
+}
+
+th {
+  text-align: left;
+  @include rem(font-size, $text_size);
+}
+
+td {
+  @include rem(font-size, $text_size);
+}

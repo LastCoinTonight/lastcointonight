@@ -1,0 +1,105 @@
+/*
+01_elements/lists
+Lists module
+*/
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul, ol {
+  @include rem(margin, 0 0 20px);
+  color: theme(text);
+}
+ul {
+  @include rem(font-size, $lists_font_size);
+  @include rem(padding, 0 0 0 22px);
+  list-style: disc;
+  li {
+    @include rem(line-height, $lists_line_height);
+    @include rem(margin, 0 0 10px);
+    /*all nested*/
+    ul {
+      @include rem(padding-top, 10px);
+      font-size: 100%;//makes all nested ul's be the same size
+      li {
+
+      }
+    }
+    /*expert*/
+    &>ul {
+      &>li {
+        /*madness*/
+        &>ul {
+          &>li {
+            /*inception*/
+            &>ul {
+              background: theme(background);
+              @include rem(padding, 20px 50px 10px);
+              @include rem(margin-top, 10px);
+              &>li {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+ol {
+  @include rem(font-size, $lists_font_size);
+  @include rem(padding, 0 0 0 22px);
+  list-style: decimal;
+  li {
+    @include rem(line-height, $lists_line_height);
+    margin: 0 0 10px;
+    /*all nested*/
+    ol {
+      @include rem(padding-top, 10px);
+      font-size: 100%;//makes all nested ol's be the same size
+      li {
+
+      }
+    }
+    /*expert*/
+    &>ol {
+      list-style: lower-alpha;
+      &>li {
+        /*madness*/
+        &>ol {
+          list-style: upper-roman;;
+          &>li {
+            /*inception*/
+            &>ol {
+              list-style: katakana;
+              background: theme(background);
+              @include rem(padding, 20px 50px 10px);
+              @include rem(margin-top, 10px);
+              &>li {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*mixed*/
+ul {
+  ol {
+    @include rem(padding-top, 10px);
+    font-size: 100%;
+  }
+}
+ol {
+  ul {
+    @include rem(padding-top, 10px);
+    font-size: 100%;
+  }
+}

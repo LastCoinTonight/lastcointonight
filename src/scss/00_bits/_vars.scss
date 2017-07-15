@@ -1,0 +1,159 @@
+/**
+ * 00_bits/vars
+ * Vars module
+ * Contains the grid, colours, and typography variables.
+ */
+
+// Spacing
+$global_columns: 12;
+$global_gutter: 9; //3.183;
+$base_spacing: 16px;
+
+@function spacing($multiplier: 1) {
+  @return $base_spacing * $multiplier;
+}
+
+@function gutter($multiplier: 1) {
+  @return $global_gutter * $multiplier * 1%;
+}
+
+@mixin bp($key) {
+  $breakpoint: map-get($bp, "#{ $key }");
+  @media(max-width: $breakpoint/16 * 1em) {
+    @content;
+  }
+}
+
+$global_mobile_gutter: spacing(1.5);
+
+// Breakpoints
+$bp: (
+  ideal: 1200,
+  large: 1110,
+  medium: 940,
+  small: 768,
+  x-small: 600,
+  tiny: 340 // 320
+);
+
+// Get values from map
+@function color($key) {
+  @return map-get($colors, "#{ $key }");
+}
+@function theme($key, $selected-theme:$theme) {
+  @return color(map-get($selected-theme, "#{ $key }"));
+}
+
+$colors: (
+  BLACK: #212432, // #000, re: glen changes
+  BLUE-GREEN: #14D4DA,
+  BLUE: #4296CB, // #00B6FF,
+  DARK-BLUE: #14A5FF,
+  DARK-GREY: #212432,
+  DARK-MEDIUM-GREY: #4E5262,
+  DARK-SLATE-GREY: #313443,
+  DARK-WHITE: #F0F4F6,
+  DARKER-MEDIUM-GREY: #3A3D4D,
+  FACEBOOK: #3F66B6,
+  GOOGLE: #DB4A3C,
+  GREEN: #48CFAE,
+  GREY: #A7AABB,
+  LIGHT-BLUE: #7DDAFF,
+  LIGHT-GREEN: #91EFDA, // #91EEDA, re: glen changes
+  LIGHT-GREY: #CED1DB,
+  LIGHTER-GREY: #E3EBEE,
+  MEDIUM-GREY: #7B7F92,
+  OFF-WHITE: #FAFCFD, //#F9FCFD, re: glen changes
+  RED: #FF505F,
+  STANDARD-GREY: #3D404F, // re: glen this is NOT used (slack)
+  WHITE: #fff
+);
+
+$theme: (
+  brand: BLUE,
+  background: WHITE,
+  background-alt: OFF-WHITE,
+  background-listing: DARK-WHITE,
+  background-avatar: LIGHTER-GREY,
+  border: LIGHTER-GREY,
+  button-hover: DARK-BLUE,
+  dark-input-border: DARK-GREY,
+  light-border: OFF-WHITE,
+  facebook: FACEBOOK,
+  google: GOOGLE,
+  gradient-end: BLUE-GREEN,
+  gradient-start: BLUE,
+  icons: MEDIUM-GREY,
+  input-border: LIGHT-GREY,
+  input-text: GREY,
+  light-text: MEDIUM-GREY,
+  link-hover: BLUE, //DARK-BLUE,
+  link: BLUE, //DARK-BLUE,
+  medium-border: DARK-WHITE,
+  nav-link-hover: BLUE,
+  nav-link: DARK-GREY,
+  standard-text: DARK-MEDIUM-GREY, //STANDARD-GREY,
+  text: DARK-GREY,
+  medium-text: MEDIUM-GREY,
+  underline: LIGHT-GREEN,
+  overlay: BLUE,
+  info: LIGHT-BLUE,
+  success: GREEN,
+  error: RED,
+  warning: MEDIUM-GREY
+);
+
+$dark-theme: (
+  background-hover: DARK-SLATE-GREY,
+  background-light: DARK-SLATE-GREY,
+  background: DARK-GREY,
+  border: DARKER-MEDIUM-GREY,
+  border-light: MEDIUM-GREY,
+  brand: WHITE,
+  dark-text: MEDIUM-GREY,
+  gradient-end: DARK-GREY,
+  gradient-start: DARK-MEDIUM-GREY,
+  icon: MEDIUM-GREY,
+  input-border: DARK-MEDIUM-GREY,
+  input-text: MEDIUM-GREY,
+  light-text: WHITE,
+  medium-text: LIGHT-GREY,
+  text: LIGHTER-GREY
+);
+
+//focus
+$focus_border: rgba(82, 168, 236, 0.8);
+
+// typography
+$base_size: 62.5%;
+$display: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$sans_serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$serif: "Georgia", "Times New Roman", Times, serif;
+$code: "Maison Neue Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$global_family: $sans_serif;
+
+$text_size: 16px;
+$text_small_size: 13px;
+$text_small_caps: 11px;
+$text_pagination_size: 14px;
+$lists_font_size: $text_size;
+$text_line_height: 32px;
+$text_compact_line_height: 26px;
+$text_small_line_height: 23px;
+$text_small_caps_line_height: 13px;
+$lists_line_height: $text_line_height;
+
+$huge: 48px;
+$large: 40px;
+$medium: 28px;
+$small: 19px;
+$x-small: 16px;
+$tiny: 15px;
+$nano: 12px;
+
+$lightFont: 200;
+$regularFont: 400;
+$demiFont: 600;
+
+/* end */

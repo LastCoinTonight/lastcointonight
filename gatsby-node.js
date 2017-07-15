@@ -24,16 +24,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 }
 
-// {
-// 	markdownRemark(frontmatter: { slug: { eq: "july-13" }}) {
-//     html
-//     frontmatter {
-//       slug
-//       title
-//     }
-//   }
-// }
-
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
@@ -49,12 +39,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           allMarkdownRemark {
             edges {
               node {
-                html
                 fields {
                   slug
-                }
-                frontmatter {
-                  prev
                 }
               }
             }
@@ -69,30 +55,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         result.data.allMarkdownRemark.edges.forEach(edge => {
-
-          if (edge.node.fields.slug === '/posts/') {
-            createPage({
-              path: '/', // required
-              component: IndexPage,
-              context: {
-                html: edge.node.html,
-                slug: edge.node.fields.slug,
-                prev: edge.node.frontmatter.prev
-              },
-            })
-          }
-
           createPage({
             path: edge.node.fields.slug, // required
             component: blogPost,
             context: {
               slug: edge.node.fields.slug,
-              prev: edge.node.frontmatter.prev
             },
           })
         })
-
-
 
         return
       })

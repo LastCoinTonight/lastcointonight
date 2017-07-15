@@ -1,0 +1,48 @@
+/**
+ * 02_items/headings
+ * Headings module
+ */
+
+.heading {
+
+  &.-huge {
+    @include rem(font-size, $huge);
+    font-weight: $lightFont;
+    letter-spacing: -.5px;
+  }
+
+  &.-large {
+    @include rem(font-size, $large);
+    letter-spacing: -.5px;
+  }
+
+  &.-medium {
+    @include rem(font-size, $medium);
+    letter-spacing: -.5px;
+  }
+
+  &.-small {
+    @include rem(font-size, $small);
+  }
+
+  &.-x-small {
+    @include rem(font-size, $x-small);
+  }
+
+  &.-tiny {
+    @include rem(font-size, $tiny);
+  }
+
+  &.-nano {
+    @include rem(font-size, $nano);
+  }
+
+  &.-flush {
+    margin-bottom: 0px;
+  }
+
+  &.-serif {
+    font-family: $serif;
+  }
+
+}

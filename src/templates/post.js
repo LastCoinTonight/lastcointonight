@@ -15,10 +15,7 @@ class BlogPostTemplate extends React.Component {
         />
         {/* <h1>{post.frontmatter.title}</h1> */}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        {post.frontmatter.prev ?
-          <Link to={post.frontmatter.prev}>Previous</Link> :
-          <Link to="/">Home</Link>
-        }
+        <Link to="/">Home</Link>
       </div>
     )
   }
@@ -32,7 +29,6 @@ query BlogPostBySlug($slug: String!) {
     html
     frontmatter {
       title
-      prev
     }
   }
 }

@@ -1,0 +1,78 @@
+/**
+ * 01_elements/reset
+ * Resets module
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: $base_size;
+}
+
+[data-whatinput="mouse"] :focus {
+  outline: none;
+}
+
+body {
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: theme(background);
+  color: theme(text);
+  font-family: $global_family;
+  font-size: 100%;
+  font-weight: $regularFont;
+  margin: 0px;
+  padding: 0px;
+  word-wrap: break-word;
+}
+
+hr {
+  @include marpad(0px 0px 20px 0px, 0px);
+  border-bottom: 1px solid color(WHITE);
+  border-top: 1px solid lighten(color(BLACK), 90);
+  border: 0;
+  clear: both;
+  height: 1px;
+  overflow: 0;
+}
+
+button {
+  font-family: $global_family;
+}
+
+header,
+footer,
+.group,
+[class*="-group"] {
+  @include group;
+}

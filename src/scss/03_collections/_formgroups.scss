@@ -1,0 +1,39 @@
+/**
+ * 03_collections/formgroups
+ * Styles for form groups
+ */
+
+.form__group {
+  @include rem(margin, 0 0 spacing(1.25));
+
+  &.-inline {
+    align-items: center;
+    display: flex;
+
+    label {
+      // @include rem(margin, 0px spacing(.5) 0px 0px);
+      margin: 0px;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.form__text {
+  font-size: 1.4em;
+  margin: 0px;
+  padding: 3px 0px;
+}
+
+.radio, .checkbox {
+  @include rem(margin, 0 0 spacing(1.25));
+
+  label {
+    font-weight: normal;
+  }
+}
+.checkbox {
+  label {
+    margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+/**
+ * 02_items/listgroups
+ * Styles for specialized lists (listgroups)
+ */
+
+ul.list-group {
+  @include resetList();
+}
+
+.list-group {
+  background: theme(background);
+  border-radius: 5px;
+  border-top: none;
+  border: 1px solid theme(border);
+  margin: 0 0 20px;
+
+  li {
+    border-top: 1px solid theme(border);
+    color: theme(text);
+    font-size: $text_size;
+    line-height:$text_line_height;
+    margin:0;
+    padding:10px;
+
+    &:last-child {
+      border-radius: 0px 0px 5px 5px;
+    }
+
+    &:first-child {
+      border-radius: 5px 5px 0px 0px;
+    }
+  }
+
+  a {
+    display: block;
+  }
+}

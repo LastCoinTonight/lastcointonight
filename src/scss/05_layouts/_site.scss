@@ -1,0 +1,78 @@
+/**
+ * 05_layouts/site
+ * Site layout styles
+ */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: $global_gutter/2 * 1%;
+  padding-right: $global_gutter/2 * 1%;
+
+  &.-flex {
+    display: flex;
+  }
+}
+
+/*
+ * Row generator
+ */
+@mixin rows($gutter: 3.183, $columns: 12) {
+  display: flex;
+  flex-wrap: wrap;
+
+  &> [class*="span"] {
+    @include borderBox;
+    padding-right: $gutter/2 * 1%;
+    padding-left: $gutter/2 * 1%
+  }
+
+  @for $i from 1 through $columns {
+    $col_width: (99.9998 / $columns);
+
+    & > .span#{$i} {
+      width: ($col_width * $i) * 1%;
+    }
+  }
+}
+
+/*
+ * Basic row
+ */
+.row {
+  @include rows($global_gutter, $global_columns);
+  max-width: calc(#{$global_gutter * 1%} + 1200px);
+  margin: 0 auto;
+}
+
+.row-tight {
+  @include rows();
+  @include rem(padding-left, spacing(.5));
+  @include rem(padding-right, spacing(.5));
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+/**
+ * Responsive
+ */
+@include bp(small) {
+  .container {
+    padding-left: $global_mobile_gutter; // $global_gutter/4 * 1%;
+    padding-right: $global_mobile_gutter; // $global_gutter/4 * 1%;
+  }
+
+  [class*="row"] > [class*="span"] {
+    padding-left: $global_mobile_gutter; // $global_gutter/4 * 1%;
+    padding-right: $global_mobile_gutter; // $global_gutter/4 * 1%;
+  }
+}
+
+@include bp(x-small) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row > [class*="span"] {
+    width: 100%;
+  }
+}

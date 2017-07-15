@@ -1,0 +1,34 @@
+/**
+ * 02_items/icons
+ * Icons module
+ */
+
+.arrow {
+  display: block;
+  width: 0;
+  height: 0;
+
+  &.-up {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid theme(text);
+  }
+
+  &.-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid theme(text);
+  }
+
+  &.-down {
+    border-top: 10px solid theme(text);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+
+  &.-left {
+    border-top: 10px solid transparent;
+    border-right: 10px solid theme(text);
+    border-bottom: 10px solid transparent;
+  }
+}

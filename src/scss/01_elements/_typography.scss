@@ -1,0 +1,70 @@
+/**
+ * 01_elements/typography
+ * Typography module
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include rem(font-size, $text_size);
+  line-height: 1.2em;
+  font-weight: $regularFont;
+  margin: 0 0 .5em 0;
+  text-rendering: optimizelegibility;
+  a {
+    color: theme(link);
+    @include hover {}
+  }
+}
+
+p {
+  @include rem(font-size, $text_size);
+  @include rem(line-height, $text_line_height);
+  @include rem(padding, 0 0 spacing(1.25));
+  color: theme(standard-text);
+  margin: 0;
+}
+
+small {
+  @include rem(font-size, $text_small_size);
+  @include rem(line-height, $text_small_line_height);
+}
+
+strong, b {
+  font-weight: $demiFont;
+}
+
+em, i {
+  font-style: italic;
+}
+
+a {
+  color: theme(link);
+  font-weight: $regularFont;
+  text-decoration: none;
+
+  @include hover {
+    background-image: linear-gradient(to right, theme(link-hover) 100%, transparent 100%);
+    background-position: 0 1.2em;
+    background-repeat: repeat-x;
+    background-size: 100% 1px;
+    color: theme(link-hover);
+    position: relative;
+    text-decoration: none;
+  }
+}
+
+pre {
+  margin: 0px;
+  white-space: pre-wrap;
+  font-family: $code;
+}
+
+code {
+  @include borderBox;
+  font-family: $code;
+  padding: 2px 4px;
+  color: theme(link);
+}

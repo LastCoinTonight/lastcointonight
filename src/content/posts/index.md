@@ -1,8 +1,7 @@
 ---
-slug: july-13
-prev: /posts/07-13-17
+title: "The Dip(s) and Bitcoin Guy"
 ---
 
-# Heyyyyyy
+# Second
 
 Yo yo foo
