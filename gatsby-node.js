@@ -30,7 +30,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const pages = []
     const blogPost = path.resolve("src/templates/post.js")
-    const IndexPage = path.resolve("src/templates/index.js")
     // Query for all markdown "nodes" and for the slug we previously created.
     resolve(
       graphql(
