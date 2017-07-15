@@ -2,6 +2,6 @@ import React from "react"
 
 export default () =>
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn't exist... the sadness.</p>
+    <h2>404 NOT FOUND</h2>
+    <p>This is entirely your fault.</p>
   </div>

@@ -10,14 +10,7 @@ export default class Index extends React.Component {
 
     return (
       <div>
-        <h1>This is happening...</h1>
-        <p><Link to="/posts">The Latest</Link></p>
-        <p>Soon.</p>
-        <p>Last Coin Tonight doesn't even make sense as a name, but I already bought the domain so we are doing this.</p>
-        <p><a href="https://twitter.com/LastCoinTonight">We have a Twitter by the way</a></p>
-        <p><Link className="btn" to="/about/">Go to page 2</Link></p>
-
-        <h1>stuff</h1>
+        <h2 className="heading -huge">{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     )
