@@ -4,6 +4,7 @@
  */
 
 .heading {
+  font-weight: $boldFont;
 
   &.-huge {
     @include rem(font-size, $huge);

@@ -26,3 +26,29 @@
     font-weight: $demiFont;
   }
 }
+
+.wallet-address {
+  @include rem(font-size, $text_small_size);
+  @include rem(margin-bottom, spacing());
+  display: inline-flex;
+  padding: 0px;
+  border: 1px solid theme(border);
+  background: theme(background-alt);
+  line-height: 1em;
+
+  .type, code {
+    display: block;
+  }
+
+  .type {
+    @include rem(padding, spacing(.5));
+    display: inline-block;
+    font-weight: $boldFont;
+    color: theme(light-text);
+    background: theme(border);
+  }
+
+  code {
+    @include rem(padding, spacing(.5) spacing());
+  }
+}
