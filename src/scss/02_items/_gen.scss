@@ -5,3 +5,17 @@
 .sr-only {
   @include sr-only;
 }
+
+.brand {
+  @include rem(margin-bottom, spacing(2));
+
+  a {
+    display: block;
+    background: none;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -11,7 +11,7 @@ table {
 
 caption {
   @include rem(padding, 0px 0px 10px);
-  color: theme(light_text);
+  color: theme(text);
   @include rem(font-size, $text_size);
   text-align: left;
 }

@@ -3,5 +3,5 @@
  * Styles for header section
  */
 .site__header {
-  
+  @include rem(padding, spacing(2) spacing() spacing(4));
 }

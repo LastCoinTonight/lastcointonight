@@ -23,7 +23,7 @@ p {
   @include rem(font-size, $text_size);
   @include rem(line-height, $text_line_height);
   @include rem(padding, 0 0 spacing(1.25));
-  color: theme(standard-text);
+  color: theme(text);
   margin: 0;
 }
 
@@ -46,10 +46,10 @@ a {
   text-decoration: none;
 
   @include hover {
-    background-image: linear-gradient(to right, theme(link-hover) 100%, transparent 100%);
-    background-position: 0 1.2em;
+    background-image: linear-gradient(to right, lighten(theme(link-hover), 30) 100%, transparent 100%);
+    background-position: 0 .95em;
     background-repeat: repeat-x;
-    background-size: 100% 1px;
+    background-size: 100% 20px;
     color: theme(link-hover);
     position: relative;
     text-decoration: none;

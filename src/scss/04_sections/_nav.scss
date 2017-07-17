@@ -4,5 +4,17 @@
  */
 
 .site__nav {
+  ul {
+    @include resetList(0px, 0px);
+    text-align: center;
+  }
 
+  li {
+    @include rem(margin, 0 spacing(.5));
+    display: inline-block;
+  }
+
+  a {
+    font-weight: $demiFont;
+  }
 }

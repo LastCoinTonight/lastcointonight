@@ -26,7 +26,7 @@ legend {
 
 label {
   @include rem(margin, 0 0 5px 0);
-  color: theme(medium-text);
+  color: theme(text);
   display: block;
   font-family: $global_family;
   font-size: $text_small_size;
@@ -54,7 +54,7 @@ input[type="email"] {
   color: theme(text);
 
   &::placeholder {
-    color: theme(medium-text)
+    color: theme(text)
   }
 
   &:focus {

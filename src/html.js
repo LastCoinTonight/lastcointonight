@@ -28,6 +28,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
           <script src="https://use.fontawesome.com/dd3a02cbd2.js"></script>
           {this.props.headComponents}
           {css}
