@@ -1,0 +1,31 @@
+// 00 bits
+@import '../00_bits/vars';
+@import '../00_bits/utils';
+
+// article
+.article {
+
+  h2, h3, h4 {
+    font-weight: $boldFont;
+  }
+
+  h2 {
+    font-size: $large;
+  }
+
+  h3 {
+    font-size: $medium;
+  }
+
+  h4 {
+    font-size: $small;
+  }
+
+  a {
+    font-weight: $demiFont;
+  }
+
+  ul {
+    @include rem(padding-left, spacing(2.5));
+  }
+}

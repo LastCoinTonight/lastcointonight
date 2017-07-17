@@ -15,9 +15,9 @@
   font-weight: $demiFont;
   letter-spacing: .5px;
   text-align: center;
+  background-image: none;
 
   @include hover {
-    background-image: none;
     border-color: theme(brand);
     text-decoration: none;
     color: theme(text);
@@ -46,8 +46,8 @@
     text-transform: uppercase;
 
     @include hover {
-      background: theme(button-hover);
-      border-color: theme(button-hover);
+      background: theme(brand);
+      border-color: theme(brand);
       color: theme(light-text, $dark-theme);
     }
 

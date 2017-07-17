@@ -21,7 +21,7 @@ export default class Template extends React.Component {
             { name: "keywords", content: "cryptocurrency, weeks" },
           ]}
         />
-        <header className="site__header">
+        <header className="site__header container">
           <h1 className="brand">
             <Link to="/">
               <img src={logo} alt=""/>
@@ -33,14 +33,11 @@ export default class Template extends React.Component {
               <li><Link to="/about/">About</Link></li>
               <li><Link to="/archive/">Archive</Link></li>
               <li><Link to="/resources/">Resources</Link></li>
-              <li><Link to="/support/">Support</Link></li>
+              <li className="highlight"><Link to="/support/">Support</Link></li>
             </ul>
           </nav>
         </header>
-        <main className="container site__main">
-          <p className="intro">For when you've got just enough time for a quick update on the last week in crypto</p>
-          {this.props.children()}
-        </main>
+        {this.props.children()}
         <footer className="site__foter">
           <div className="container">
             <a className="btn -with-icon" href="https://twitter.com/LastCoinTonight"><i className="fa fa-twitter" aria-hidden="true"></i> Twitter</a>

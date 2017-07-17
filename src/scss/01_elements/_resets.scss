@@ -70,6 +70,17 @@ button {
   font-family: $global_family;
 }
 
+figure {
+  @include rem(padding, spacing(2));
+  margin: 0px;
+}
+
+figcaption {
+  @include rem(padding, spacing() 0);
+  font-size: $text_small_size;
+  color: theme(light-text);
+}
+
 header,
 footer,
 .group,

@@ -7,8 +7,6 @@
 }
 
 .brand {
-  @include rem(margin-bottom, spacing(2));
-
   a {
     display: block;
     background: none;
