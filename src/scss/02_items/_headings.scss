@@ -45,4 +45,15 @@
     font-family: $serif;
   }
 
+  span {
+    @include rem(font-size, $text_smallest_size);
+    @include rem(margin-bottom, spacing(-.5));
+    letter-spacing: 1px;
+    display: block;
+    line-height: 1;
+    font-weight: $boldFont;
+    text-transform: uppercase;
+    color: theme(light-text);
+  }
+
 }

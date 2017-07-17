@@ -1,5 +1,6 @@
 ---
 title: "This is a title"
+date: "17 July, 2017"
 ---
 
 ## Heading 2

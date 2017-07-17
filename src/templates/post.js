@@ -6,17 +6,15 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
 
-    console.log(this.props)
-
     return (
-      <div>
+      <main className="container">
         <Helmet
           title={post.frontmatter.title}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1 className="heading -huge"><span>{post.frontmatter.date || 'Latest'}</span>{post.frontmatter.title}</h1>
+        <div className="article" dangerouslySetInnerHTML={{ __html: post.html }} />
         <Link to="/">Home</Link>
-      </div>
+      </main>
     )
   }
 }
@@ -29,6 +27,7 @@ query BlogPostBySlug($slug: String!) {
     html
     frontmatter {
       title
+      date
     }
   }
 }

@@ -15,7 +15,7 @@ export default class Resources extends React.Component {
     const resources = this.props.data.allMarkdownRemark.edges
 
     return (
-      <div>
+      <main className="container">
         <Helmet
           title="Last Coin Tonight | Resources"
         />
@@ -23,7 +23,7 @@ export default class Resources extends React.Component {
         <ul>
           { resources.length > 0 ? resources.map(this.renderListItems) : <li>Nothing Here</li> }
         </ul>
-      </div>
+      </main>
     )
   }
 }

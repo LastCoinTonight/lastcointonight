@@ -31,7 +31,7 @@ export default class Template extends React.Component {
           <nav className="site__nav">
             <ul>
               <li><Link to="/about/">About</Link></li>
-              <li><Link to="/archive/">Archive</Link></li>
+              {/* <li><Link to="/archive/">Archive</Link></li> */}
               <li><Link to="/resources/">Resources</Link></li>
               <li className="highlight"><Link to="/support/">Support</Link></li>
             </ul>
