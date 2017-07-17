@@ -12,13 +12,17 @@
       "page-component---src-pages-index-js-99adeceb2266b9970f3b.js",
       "page-component---src-pages-index-js-99adeceb2266b9970f3b.js.map"
     ],
+    "page-component---src-pages-donate-js": [
+      "page-component---src-pages-donate-js-82453b6b9099a5ef6767.js",
+      "page-component---src-pages-donate-js-82453b6b9099a5ef6767.js.map"
+    ],
     "path---resources": [
       "path---resources-b9ad46bd76734d609894.js",
       "path---resources-b9ad46bd76734d609894.js.map"
     ],
     "path---resources-blockchain": [
-      "path---resources-blockchain-60f0c570ca204ee0de66.js",
-      "path---resources-blockchain-60f0c570ca204ee0de66.js.map"
+      "path---resources-blockchain-6728fda50522c8838019.js",
+      "path---resources-blockchain-6728fda50522c8838019.js.map"
     ],
     "path---posts": [
       "path---posts-466ea6eeaca88c2c101d.js",
@@ -56,25 +60,21 @@
       "page-component---src-pages-resources-js-a678878b100ebe505edd.js",
       "page-component---src-pages-resources-js-a678878b100ebe505edd.js.map"
     ],
-    "page-component---src-pages-donate-js": [
-      "page-component---src-pages-donate-js-b3b9cd3096a2ac49a53e.js",
-      "page-component---src-pages-donate-js-b3b9cd3096a2ac49a53e.js.map"
-    ],
     "page-component---src-pages-archive-js": [
       "page-component---src-pages-archive-js-d24c1262b7a195cb442b.js",
       "page-component---src-pages-archive-js-d24c1262b7a195cb442b.js.map"
     ],
     "page-component---src-pages-about-js": [
-      "page-component---src-pages-about-js-42a0deb8701b4799faeb.js",
-      "page-component---src-pages-about-js-42a0deb8701b4799faeb.js.map"
+      "page-component---src-pages-about-js-27c92ad8b208d38cfc1e.js",
+      "page-component---src-pages-about-js-27c92ad8b208d38cfc1e.js.map"
     ],
     "page-component---src-pages-404-js": [
       "page-component---src-pages-404-js-acb9aa3ae1fd81db53b7.js",
       "page-component---src-pages-404-js-acb9aa3ae1fd81db53b7.js.map"
     ],
     "app": [
-      "app-3aaafca39f887254ce65.js",
-      "app-3aaafca39f887254ce65.js.map"
+      "app-0377eaf4e87f8f649d51.js",
+      "app-0377eaf4e87f8f649d51.js.map"
     ]
   }
 }

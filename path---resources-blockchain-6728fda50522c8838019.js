@@ -1,0 +1,2 @@
+webpackJsonp([5],{"./node_modules/json-loader/index.js!./.cache/json/resources-blockchain.json":function(e,t){e.exports={data:{markdownRemark:{html:"<h2>What is the blockchain?</h2>\n<p>That's a really good question. We'll answer that soon but in the maintime <a href=\"https://www.youtube.com/watch?v=bBC-nXj3Ng4\">this is the best explanation we've ever seen</a>.</p>",frontmatter:{title:"The Blockhain",date:null}}},pathContext:{slug:"/resources/blockchain/"}}}});
+//# sourceMappingURL=path---resources-blockchain-6728fda50522c8838019.js.map
