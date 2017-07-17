@@ -17,3 +17,12 @@
     margin: 0 auto;
   }
 }
+
+.small {
+  @extend small;
+  color: theme(light-text);
+
+  a {
+    font-weight: $demiFont;
+  }
+}

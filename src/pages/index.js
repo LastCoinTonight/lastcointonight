@@ -10,10 +10,8 @@ export default class Index extends React.Component {
 
     const post = this.props.data.markdownRemark
 
-    console.log(post.frontmatter)
-
     return (
-      <main className="container">
+      <main className="site__main container">
         <h1 className="heading -huge"><span>{post.frontmatter.date || 'Latest'}</span>{post.frontmatter.title}</h1>
         <div className="article" dangerouslySetInnerHTML={{ __html: post.html }} />
       </main>

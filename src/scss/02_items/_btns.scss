@@ -66,6 +66,23 @@
   &.-block {
     display: block;
   }
+
+  &.-with-icon {
+    @include rem(font-size, $text_smallest_size);
+    border-color: transparent;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    @include hover {
+      color: theme(brand);
+    }
+
+    .fa {
+      @include rem(margin-right, spacing(.5));
+      @include rem(font-size, $text_size);
+    }
+  }
 }
 
 button.btn.-block {

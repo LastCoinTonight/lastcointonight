@@ -78,11 +78,7 @@ blockquote {
 code {
   @include borderBox;
   @include rem(font-size, $text_small_size);
-  @include rem(margin-bottom, spacing(2));
-  background: theme(background-alt);
-  border: 1px solid theme(border);
-  color: theme(light-text);
-  display: block;
+  color: theme(brand);
+  display: inline-block;
   font-family: $code;
-  padding: spacing(2);
 }

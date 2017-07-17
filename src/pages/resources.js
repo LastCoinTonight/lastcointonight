@@ -15,11 +15,12 @@ export default class Resources extends React.Component {
     const resources = this.props.data.allMarkdownRemark.edges
 
     return (
-      <main className="container">
+      <main className="site__main container">
         <Helmet
           title="Last Coin Tonight | Resources"
         />
-        <h1>Resources...</h1>
+        <h1 className="heading -huge">Resources</h1>
+        <p>A comprehensive list of resources about blockchain (dev/general), and cryptocurrencies. Coming soon...</p>
         <ul>
           { resources.length > 0 ? resources.map(this.renderListItems) : <li>Nothing Here</li> }
         </ul>

@@ -4,5 +4,7 @@
  */
 
 .site__footer {
-
+  @include rem(padding, spacing(4) 0px);
+  background: theme(background-alt);
+  border-top: 1px solid theme(border);
 }

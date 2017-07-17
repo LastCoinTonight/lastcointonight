@@ -2,3 +2,6 @@
  * 04_sections/main
  * Styles for main section
  */
+.site__main {
+  @include rem(padding-bottom, spacing(2));
+}
