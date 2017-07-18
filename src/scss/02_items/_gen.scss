@@ -33,12 +33,12 @@
   display: inline-flex;
   padding: 0px;
   border: 1px solid theme(border);
-  background: theme(background-alt);
+  background: theme(background);
   line-height: 1em;
 
-  .type, code {
-    display: block;
-  }
+  // .type, code {
+  //   display: inline-block;
+  // }
 
   .type {
     @include rem(padding, spacing(.5));
@@ -50,5 +50,23 @@
 
   code {
     @include rem(padding, spacing(.5) spacing());
+  }
+}
+
+// @TODO move to it's own file and import into DonateBox
+.donate-box {
+  @include rem(padding, spacing(2));
+  @include rem(margin-bottom, spacing(2));
+  background: theme(background-alt);
+  border: 1px solid theme(border);
+  display: inline-block;
+
+  .wallet-address {
+    display: flex;
+  }
+
+  p {
+    @include rem(margin-bottom, spacing(.5));
+    padding: 0px;
   }
 }

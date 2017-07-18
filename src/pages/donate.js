@@ -10,7 +10,7 @@ export default class Subscribe extends React.Component {
         <h1 className="heading -huge">This is all free, but wouldn't it be great if it wasn't?</h1>
 
         <DonateBox
-          introText={'TL;DR donate with your favourite crypto:'}
+          introText="TL;DR donate with your favourite crypto:"
         />
 
         {/* @TODO add links to bitcoin guy reference and UET reference... */}
@@ -30,7 +30,7 @@ export default class Subscribe extends React.Component {
         </ul>
 
         <DonateBox
-          introText={'So what are you waiting for? Help us pay our student loans:'}
+          introText="So what are you waiting for? Help us pay our student loans:"
         />
 
       </main>
