@@ -3,6 +3,6 @@
  * Styles for header section
  */
 .site__header {
-  @include rem(padding, spacing(4) 0 spacing(3));
+  @include rem(padding, spacing(5) 0 spacing(3));
   position: relative;
 }

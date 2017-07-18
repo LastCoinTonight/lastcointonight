@@ -29,7 +29,7 @@
     @include rem(padding-left, spacing(2.5));
   }
 
-  code {
+  pre code {
     @include rem(margin-bottom, spacing(2));
     background: theme(background-alt);
     border: 1px solid theme(border);

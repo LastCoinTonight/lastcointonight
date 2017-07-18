@@ -1,21 +1,32 @@
 ---
-title: "This is a title"
-date: "17 July, 2017"
+title: "50% in losses? That's just a Monday"
+date: "18 July, 2017"
 ---
 
-## Heading 2
+## The Recap
 
-Lorem ipsum dolor sit amet, [a random link](/about) consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+What's the haps?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### The ridiculous:
 
-### Heading 3
+- The world is ending, everything is down, then [Chris Burniske reminded us how to do maths](https://twitter.com/cburniske/status/887015884342087685)
+- /r/ethtrader is wondering if this a [bull bull trap because, it's such an obvious bull trap](https://www.reddit.com/r/ethtrader/comments/6nwoxd/be_careful_of_a_bull_trap/dkctzyb/).
+- The most influential cryptocurrency newsletter launched this week. The countdown to a cease and desist starts...now.
+- MyEtherWallet goes on an [epic rant about Crappy Token Creators](https://twitter.com/myetherwallet/status/886997735911546880?s=09). It's a good time to remember UET didn't get hacked. [Bullish on UET](https://uetoken.com/)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### The awesome:
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- Radiolab put out an episode about Zcash (ZEC), it was awesome. Check out [The Ceremony](http://www.radiolab.org/story/ceremony/)
 
-#### Heading 4
+___
+
+## Top Story: Does EOS and Tezos suck?
+
+I have no idea yet.
+
+___
+
+## For The Devs: How hard is it to make your own ERC20 Token?
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -25,72 +36,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 > Blockquote! Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+___
 
-## Heading 2
+## The Main Story
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[Venezuelans: Pioneers in cryptospace](https://medium.com/blockchannel/venezuelans-turns-to-zcash-ethereum-amidst-political-turmoil-5bf5db290295)
 
-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-- Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+___
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## The Poll
 
-<figure>
-  <img src="./img/testimage.jpg" alt="">
-  <figcaption>This image has a figcaption!</figcaption>
-</figure>
+Each week we have a tip jar poll. The hope is that we can come up with a question that you want to answer so badly you give us free money. We are hoping this works.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Vote by sending ETH, BTC, or LTC to the address **below** your answer. This week's question is this:
 
-```
-// Some code
-import Microcosm, { get, set } from 'microcosm'
-import axios from 'axios'
+*Is [Craig Wright](https://en.wikipedia.org/wiki/Craig_Steven_Wright) the creator of Bitcoin, Satoshi Nakamoto?*
 
-let repo = new Microcosm()
-
-function getUser (id) {
-  // This will return a promise. Microcosm automatically handles promises.
-  // See http://code.viget.com/microcosm/api/actions.html
-  return axios(`/users/${id}`)
-}
-
-// Domains define how a Microcosm should turn actions into new state
-repo.addDomain('users', {
-  getInitialState () {
-    return {}
-  },
-  addUser (users, record) {
-    // The set helper non-destructively assigns keys to an object
-    return set(users, record.id, record)
-  },
-  register () {
-    return {
-      [getUser]: {
-        done: this.addUser
-      }
-    }
-  }
-})
-
-// Push an action, a request to perform some kind of work
-let action = repo.push(getUser, 2)
-
-action.onDone(function () {
-  let user = get(repo.state, ['users', '2'])
-
-  console.log(user) // { id: 2, name: "Bob" }
-})
-
-// You could also handle errors in a domain's register method
-// by hooking into `getUser.error`
-action.onError(function () {
-  alert("Something went terribly wrong!")
-})
-```
-
-<!--
-_![](./img/testimage.jpg)_
-
- -->
+- a) No, but I don't have any Bitcoins or Litecoins
+<p class="wallet-address"><span class="type">ETH</span> <code>0xd04cE3b302729b3405cB5Bbf3997ec01B4639566</code></p>
+- b) We are all Satoshi Nakamoto, except Craig Wright
+<p class="wallet-address"><span class="type">BTC</span> <code>??</code></p>
+- c) Who? but I am guessing No
+<p class="wallet-address"><span class="type">LTC</span> <code>??</code></p>
